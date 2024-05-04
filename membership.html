@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+    Final Project
+    Author: Tenzin Tsering
+    Date:   04/26/2024
+
+    Filename: membership.html
+   -->
+   
+   <title>Alpha Fitness</title>
+   <meta charset="utf-8" />
+  <link rel="stylesheet" href="tt_style.css">
+  <link rel="stylesheet" href="member.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+   <a href="tt_gym.html" title="Home Page">
+    <img src="logo.jpeg" alt="Gym Logo" width="150" height="auto">
+</a>
+
+<div class="topnav">
+  <a class="active" href="tt_gym.html">Home</a>
+  <a href="membership.html">Membership</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="#pass">Free Pass</a>
+  <a href="events.html">Events</a>
+  <a href="#contact">Contact Us</a>
+</head>
+
+<body>
+    <div class="plans-container">
+        <div class="plan">
+            <h2>Basic Plan</h2>
+            <p class="price">$19.99 / Month</p>
+            <ul>
+                <li>Access to gym equipment</li>
+                <li>1 fitness consultation per month</li>
+                <li>2 group classes per month</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="plan">
+            <h2>Standard Plan</h2>
+            <p class="price">$29.99 / Month</p>
+            <ul>
+                <li>Access to gym equipment</li>
+                <li>5 fitness consultations per month</li>
+                <li>5 group classes per month</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="plan">
+            <h2>Premium Plan</h2>
+            <p class="price">$49.99 / Month</p>
+            <ul>
+                <li>Unlimited access to gym equipment</li>
+                <li>Unlimited fitness consultations</li>
+                <li>Unlimited group classes</li>
+                <li>Access to spa & sauna</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+    </div>
+<style>
+
+body {
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+<title>Membership Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            visibility: visible; /* Ensures elements are not invisible */
+            color: black; /* Adjust as necessary */
+           background-color: white;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Membership Form</h1>
+    <form id="membershipForm">
+    <form action="/submit-your-form-handler" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Phone number must be in the format: 123-456-7890">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src="form-validation.js"></script>
+
+</body>
+
+<footer>
+    <div class="footer-icons">
+        <a href="https://www.facebook.com/yourFacebookUsername" target="_blank" title="Follow us on Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/yourTwitterHandle" target="_blank" title="Follow us on Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/yourInstagramHandle" target="_blank" title="Follow us on Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</footer>
+
+ 
+</html>
